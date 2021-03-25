@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rocket League Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main>
+
+        <div id="formdiv">
+
+            <form id="survey-form">
+            
+                <h1 id="title" class="text-align">Rocket League Survey Form</h1>
+                <p id="description">Are you a noob bronze or a sweaty grand champ?</p>
+
+                <fieldset>
+                    <legend>Personal Details</legend>
+                    <!-- Name -->
+                    <div class="group">
+                        <label for="name" id="name-label">Name</label>
+                        <input 
+                        type="text" 
+                        name="name" 
+                        id="name"
+                        class="form-control"
+                        placeholder="Enter your name"
+                        required
+                        >
+                    </div>
+                    <!-- Date of Birth -->
+                    <div class="group">
+                        <label for="dob" id="dob-label">Age</label>
+                        <input 
+                        type="date" 
+                        name="dob" 
+                        id="dob"
+                        class="form-control"
+                        required>
+                    </div>
+                    <!-- Email -->
+                    <div class="group">
+                        <label for="email" id="email-label">Email</label>
+                        <input
+                        type="email" 
+                        name="email" 
+                        id="email"
+                        class="form-control"
+                        placeholder="Enter your email"
+                        required>
+                    </div>
+                    <!-- Telephone Number-->
+                    <div class="group">
+                        <label for="number" id="number-label">Telephone Number</label>
+                        <input 
+                        type="number" 
+                        name="number" 
+                        id="number"
+                        class="form-control"
+                        min="1"
+                        max="11"
+                        placeholder="Enter your number here"
+                        required>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Rocket League Details</legend>
+                    <!-- Rank -->
+                    <div class="group">
+                        <p>What is your Rocket League Rank?</p>
+                        <select name="rank" id="rank">
+                            <option value="bronze">Bronze</option>
+                            <option value="silver">Silver</option>
+                            <option value="gold">Gold</option>
+                            <option value="platinum">Platinum</option>
+                            <option value="diamond">Diamond</option>
+                            <option value="champion">Champion</option>
+                            <option value="grand-champion">Grand Champion</option>
+                            <option value="super-sonic-legend">Super Sonic Legend</option>
+                        </select>
+                    </div>
+                    <!-- Play Time-->
+                    <div class="group">
+                        <p>How often do you play Rocket League per day?</p>
+                        <label>
+                            <input 
+                            type="radio" 
+                            name="playtime" 
+                            id="playtime"
+                            class="input-radio"
+                            value="occasionally">
+                            Occasionally
+                        </label>
+                        <label>
+                            <input 
+                            type="radio" 
+                            name="playtime" 
+                            id="playtime"
+                            class="input-radio"
+                            value="often">
+                            Often
+                        </label>
+                        <label>
+                            <input 
+                            type="radio" 
+                            name="playtime" 
+                            id="playtime"
+                            class="input-radio"
+                            value="i-dont-sleep-much">
+                            I don't sleep much
+                        </label>
+                    </div>
+                    <div class="group">
+                        <p>What mechanics are you proficient at?</p>
+                        <label>
+                            <input 
+                            type="checkbox" 
+                            name="mechanics" 
+                            id="flip-reset"
+                            class="input-checkbox"
+                            value="flip-reset">
+                            Flip-Reset
+                        </label>
+                        <label>
+                            <input 
+                            type="checkbox" 
+                            name="mechanics" 
+                            id="wave-dash"
+                            class="input-checkbox"
+                            value="wave-dash">
+                            Wave-Dash
+                        </label>
+                        <label>
+                            <input 
+                            type="checkbox" 
+                            name="mechanics" 
+                            id="redirects" 
+                            class="input-checkbox"
+                            value="redirects">
+                            Redirects
+                        </label>
+                        <label>
+                            <input 
+                            type="checkbox" 
+                            name="mechanics" 
+                            id="air-dribbles" 
+                            class="input-checkbox"
+                            value="air-dribbles">
+                            Air Dribbles
+                        </label>
+                        <label>
+                            <input 
+                            type="checkbox" 
+                            name="mechanics" 
+                            id="backboard-reads" 
+                            class="input-checkbox"
+                            value="backboard-reads">
+                            Backboard Reads
+                        </label>
+                        <label>
+                            <input 
+                            type="checkbox" 
+                            name="mechanics" 
+                            id="rotation"
+                            class="input-checkbox"
+                            value="rotation">
+                            Rotation
+                        </label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Comments</legend>
+
+                    <div class="group">
+                        <textarea name="comments" id="comments" cols="20" rows="5"></textarea>
+                    </div>
+                </fieldset>
+                
+                <input type="submit" value="submit" id="submit"> 
+            </form>
+        </div>
+    </main>
+</body>
+</html>
