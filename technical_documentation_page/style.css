@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap');
+
+:root{
+    --header-font: 'Montserrat', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+html{
+    font-family: sans-serif;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(30, 30, 30);
+    line-height: 2rem;
+}
+
+#navbar{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    min-width: 290px;
+    width: 300px;
+    height: 100%;
+}
+
+#navbar header{
+}
+
+#navbar ul{
+    height: 75%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#navbar ul li{
+    padding: 0 30px;
+    position: relative;
+    list-style: none;
+    width: 100%;
+}
+
+#navbar a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+}
+
+#navbar a:hover{
+    background-color: rgb(255,69,0);
+    color: rgb(30, 30, 30);
+}
+
+#main-doc{
+    position: absolute;
+    margin-left: 310px;
+}
+
+header{
+    font-family: var(--header-font);
+    font-size: 2rem;
+    color: rgb(255,69,0);
+    border-bottom: 2px solid rgb(255,69,0);
+}
+
+p{
+    margin: 2rem 0;
+}
+
+#main-doc ul{
+    padding-left: 5rem;
+}
+
+code{
+    display: block;
+    color: rgb(255,69,0);
+    background-color: rgb(20, 20, 20);
+    word-wrap: normal;
+    word-break: normal;
+    white-space: pre-line;
+    padding: 1rem;
+    margin: 2rem;
+    border-radius: 20px;
+}
+
+@media only screen and (max-width: 815px) {
+    /* For mobile phones: */
+    #navbar ul {
+      border: 1px solid;
+      height: 200px;
+    }
+  
+    #navbar {
+      background-color: rgb(30, 30, 30);
+      position: absolute;
+      top: 0;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      max-height: 220px;
+      border: none;
+      z-index: 2;
+    }
+  
+    #main-doc {
+      position: relative;
+      margin-left: 0px;
+      margin-top: 270px;
+    }
+  }
