@@ -1,0 +1,24 @@
+:root{
+    --main-orange: rgb(255, 102, 0);
+    --main-gray: rgb(48,56,65);
+    --main-white: rgb(255, 255, 255);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+}
+
+html{
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+header h1{
+    display: inline;
+}
+
+header:last-child{
+    color: var(--main-white);
+}

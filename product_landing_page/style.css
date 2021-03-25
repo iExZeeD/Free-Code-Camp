@@ -50,6 +50,7 @@ ul li a:hover {
 }
 
 #header {
+    background-color: rgb(31, 31, 31);
     width: 100%;
     position: fixed;
 }
